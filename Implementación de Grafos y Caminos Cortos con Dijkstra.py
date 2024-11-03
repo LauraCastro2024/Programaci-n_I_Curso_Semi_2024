@@ -1,3 +1,14 @@
+# Clase Grafo: Se desarrolla una clase que representa 
+# un grafo dirigido, utilizando una matriz de adyacencia.
+# La clase incluye los siguientes métodos:
+ ## Añadir nuevos nodos al grafo.
+ ## Definir las conexiones entre los nodos en la matriz de adyacencia.
+ ## Visualizar la matriz que representa el grafo.
+# Se implementa el algoritmo de Dijkstra dentro de la clase 
+# para calcular el camino más corto desde un nodo origen a los demás nodos.
+# La salida muestra el camino más corto y su coste.
+# El usuario ingresa los nodos y aristas a través de la consola.
+
 import numpy as np  # Importamos la biblioteca numpy para trabajar con matrices
 
 class GrafoDirigido:  # Definimos una clase para el grafo dirigido
