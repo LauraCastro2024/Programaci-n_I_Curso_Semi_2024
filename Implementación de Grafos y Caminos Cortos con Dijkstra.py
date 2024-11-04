@@ -75,17 +75,17 @@ if __name__ == "__main__":  # Este bloque solo se ejecuta si el script se ejecut
     grafo.agregar_nodo('A')  # Agregamos el nodo 'A'
     grafo.agregar_nodo('B')  # Agregamos el nodo 'B'
     grafo.agregar_nodo('C')  # Agregamos el nodo 'C'
-    grafo.agregar_arista('A', 'B', 30)  # Agregamos una arista de 'A' a 'B' con peso 1
-    grafo.agregar_arista('A', 'C', 90)  # Agregamos una arista de 'A' a 'C' con peso 4
-    grafo.agregar_arista('B', 'C', 72)  # Agregamos una arista de 'B' a 'C' con peso 2
+    grafo.agregar_arista('A', 'B', 30)  # Agregamos una arista de 'A' a 'B' con peso 30
+    grafo.agregar_arista('A', 'C', 90)  # Agregamos una arista de 'A' a 'C' con peso 90
+    grafo.agregar_arista('B', 'C', 72)  # Agregamos una arista de 'B' a 'C' con peso 72
     
     grafo.mostrar_matriz()  # Mostramos la matriz de adyacencia del grafo
     
     distancias, caminos = grafo.dijkstra('A')  # Ejecutamos el algoritmo de Dijkstra desde el nodo 'A'
     
-    for nodo, costo in distancias.items():  # Iteramos sobre cada nodo y su costo desde el nodo de inicio
-        if costo < float('inf'):  # Si el nodo es alcanzable
-            print(f"El camino más corto de A a {nodo} es {caminos[nodo]} con un coste de {costo}")  # Mostramos el camino y su costo
+    for nodo, coste in distancias.items():  # Iteramos sobre cada nodo y su costo desde el nodo de inicio
+        if coste < float('inf'):  # Si el nodo es alcanzable
+            print(f"El camino más corto de A a {nodo} es {caminos[nodo]} con un coste de {coste}")  # Mostramos el camino y su coste
         else:
             print(f"No hay camino desde A hasta {nodo}")  # Si no hay camino, mostramos un mensaje
 
